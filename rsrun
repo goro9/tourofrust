@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+target=$1
+rustc -v -o build/${target} ${target}.rs
+./build/${target}
